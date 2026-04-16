@@ -1,3 +1,6 @@
+
+import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -17,6 +20,8 @@ function App() {
         <Route path="/admission" element={<Admission />} />
         <Route path="/faculty" element={<Faculty />} />
       </Routes>
+      <Footer />
+      <BackToTop />
     </BrowserRouter>
   );
 }
